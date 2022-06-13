@@ -1,5 +1,3 @@
-debug = 1
-
 # def is_over_five_hundred_divisors(num):
 # 	divisors = set()
 # 	for x in range(1, num):
@@ -41,8 +39,8 @@ def highly_divisible_triangular_number():
 			print(num)
 			break
 
-		i = i+1
-		num = num+i
+		i = i + 1
+		num = num + i
 
 
 if __name__ == "__main__":
