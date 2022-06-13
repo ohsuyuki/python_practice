@@ -18,7 +18,7 @@
 def is_over_five_hundred_divisors(n):
 	lower_divisors , upper_divisors = [], []
 	i = 1
-	while i*i <= n:
+	while i * i <= n:
 		if n % i == 0:
 			lower_divisors.append(i)
 			if i != n // i:
