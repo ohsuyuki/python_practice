@@ -1,0 +1,27 @@
+{
+	"[json][jsonc]": {
+		"editor.tabSize": 2,
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"[python]": {
+		"editor.tabSize": 4,
+		"editor.codeActionsOnSave": {
+			"source.organizeImports": true
+		},
+		"editor.formatOnSave": true
+	},
+	"files.insertFinalNewline": true,
+	"python.formatting.provider": "black",
+	"python.formatting.blackArgs": [
+		"--line-length=99"
+	],
+	"python.linting.enabled": true,
+	"python.linting.flake8Args": [
+		"--max-line-length=99"
+	],
+	"python.linting.flake8Enabled": true,
+	"python.linting.lintOnSave": true,
+	"python.linting.pylintEnabled": false,
+	"editor.insertSpaces": true
+}
