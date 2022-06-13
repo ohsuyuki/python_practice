@@ -11,7 +11,6 @@ def smallest_multiple():
 	print(step)
 	num = step
 	while True:
-		# print(num)
 		if is_divisible(num):
 			print(num)
 			break
