@@ -6,6 +6,7 @@ def is_palindrome(num):
 
 	return True
 
+
 def largest_palindrome_product():
 	numbers = list({x*y for x in range(100,1000) for y in range(100, 1000)})
 
