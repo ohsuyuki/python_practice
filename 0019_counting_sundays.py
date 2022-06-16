@@ -1,3 +1,27 @@
+# 標準モジュールのdatetimeやcalendarが便利です。
+#   import calendar
+#   calendar.isleap(2000)
+#
+# 使うとこういう書き方ができます。
+#   import datetime
+#   d = datetime.date(1901, 1, 1)
+#   count = 0
+#   while d.year < 2001:
+#       if d.day == 1 and d.weekday() == 6:
+#           count += 1
+#       d += datetime.timedelta(days=1)
+#   print(count)
+#
+# こっちの方が効率的ですが。
+#   d = datetime.date(1901, 1, 1)
+#   count = 0
+#   while d.year < 2001:
+#       if d.weekday() == 6:
+#           count += 1
+#       d += datetime.timedelta(days=32)
+#       d = d.replace(day=1)
+#   print(count)
+
 def is_leap(year):
     if year % 400 == 0:
         return True
