@@ -20,6 +20,9 @@ def largest_product_in_a_grid():
 20 73 35 29 78 31 90 01 74 31 49 71 48 86 81 16 23 57 05 54
 01 70 54 71 83 51 54 69 16 92 33 48 61 43 52 01 89 19 67 48"""
 
+    # split("\n")よりはsplitlines()の方が改行コードをよろしく扱ってくれるので良いかもしれません。
+    # また、好みは分かれるかもですがlistとかmapを関数として利用してこんな書き方もできます。
+    # grid = [list(map(int, row.split())) for row in org_grid.splitlines()]
     grid = [[int(ch) for ch in row.split()] for row in org_grid.split("\n")]
 
     max_product = 0
